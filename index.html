@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=yes">
+
+	<!-- required by bootstrap -->
+	<link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./lib/open-iconic/font/css/open-iconic-bootstrap.css">
+
+	<!-- ArSchool -->
+	<link rel="stylesheet" href="./css/arschool.css">
+	<link rel="stylesheet" href="./css/index.css">
+
+	<!-- Application -->
+	<link rel="stylesheet" href="style.css">
+
+	<title>ArSchoolの診断アプリ</title>
+</head>
+<body id="question-page">
+<div class="container-fluid">
+	<!-- 見出し -->
+	<div class="row">
+		<div class="col">
+			<h1 id="quiz-title">アプリの紹介ページ</h1>
+		</div>
+	</div>
+
+	<!-- 問題を表示 -->
+	<div id="quiz-main" class="row">
+		<div class="col">
+			<h2 id="question-state" class="">
+				診断アプリは、質問に答えていくことで、その人が何タイプか診断を出すアプリケーションです。<br>
+				ここでは、大きく分けて三つのステップで学びます。
+			</h2>
+			<ul id="ul-select" class="text" data-qnum="1">
+				<li data-answer="2" class="trg-q">
+					<a href="step1/index.html">Step#1. 質問1つのアプリを作る</a>
+				</li>
+
+				<li data-answer="3" class="trg-q">
+					<a href="step2/index.html">Step#2. 質問と診断結果を増やす</a>
+				</li>
+
+				<li data-answer="4" class="trg-q">
+					<a href="step3/index.html">Step#3. 診断方法を変える</a>
+				</li>
+				<li data-answer="0" class="trg-q">
+					<a href="demo/index.html">（アプリ例）電車診断アプリ</a>
+				</li>
+
+				<li data-answer="1" class="trg-q">
+					<a href="demo2/index.html">（アプリ例）恋愛心理テスト</a>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+	<!-- 戻るボタン -->
+	<div class="row">
+		<div class="col" id="nav-left">
+			<button type="button" class="btn btn-secondary" id="back-button" data-to="">前の質問に戻る</button>
+		</div>
+	</div>
+</div>
+</body>
+</html>
